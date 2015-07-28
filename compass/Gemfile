@@ -1,0 +1,6 @@
+# Gemfile for sass, compass and bootstrap-sass
+source "https://rubygems.org"
+
+gem 'sass', "=3.4.13"
+gem 'compass', "=1.0.1"
+gem 'bootstrap-sass', '~> 3.3.5'
