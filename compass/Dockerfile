@@ -12,9 +12,9 @@ RUN apt-get update
 # Installing ruby and bundle
 RUN apt-get install -y ruby-full && gem install bundle
 
-ADD Gemfile /var/tmp/Gemfile
+COPY Gemfile /var/tmp/Gemfile
 
-WORKDIR /var/tmp/Gemfile
+WORKDIR /var/tmp/
 
 # Installing gems in Gemfile
 RUN bundle install
