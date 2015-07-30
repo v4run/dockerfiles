@@ -18,3 +18,7 @@ WORKDIR /var/tmp/
 
 # Installing gems in Gemfile
 RUN bundle install
+
+RUN mkdir /config
+
+WORKDIR /config
